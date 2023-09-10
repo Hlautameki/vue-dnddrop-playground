@@ -12,7 +12,8 @@
     "dev": "quasar dev",
     "build": "quasar build",
     "deploy": "push-dir --dir=dist/spa --remote=gh-pages --branch=gh-master",
-    "deploy2": "git push origin :gh-pages && git subtree push --prefix dist/spa origin gh-pages"
+    "deploy2": "git push origin :gh-pages && git subtree push --prefix dist/spa origin gh-pages",
+    "deploy3": "gh-pages -d dist/spa"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
@@ -30,6 +31,7 @@
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^9.0.0",
+    "gh-pages": "^6.0.0",
     "postcss": "^8.4.14",
     "prettier": "^2.5.1",
     "push-dir": "^0.4.1"
