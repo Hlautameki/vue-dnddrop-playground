@@ -1,14 +1,19 @@
 <template>
   <q-page padding>
     <div>
-      <Container remove-on-drop-out @drop="onDrop">
-        <Draggable v-for="item in items" :key="item.id">
-          <button>{{ item.data }}</button>
+<q-btn>Draggable 0</q-btn>
+      <Container  remove-on-drop-out @drop="onDrop">
+        <Draggable style="overflow: unset" v-for="item in items" :key="item.id">
+          <q-btn>{{ item.data }}</q-btn>
+<!--          <div >-->
+<!--            <q-btn >{{ item.data }}</q-btn>-->
+<!--          </div>-->
         </Draggable>
       </Container>
       <Container>
         <div>drop area</div>
       </Container>
+      <q-btn>test</q-btn>
     </div>
   </q-page>
 </template>
