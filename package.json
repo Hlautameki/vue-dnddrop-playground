@@ -11,7 +11,8 @@
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
     "build": "quasar build",
-    "deploy": "gh-pages -d dist/spa"
+    "deploy": "gh-pages -d dist/spa",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
@@ -30,7 +31,9 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^9.0.0",
     "gh-pages": "^6.0.0",
+    "patch-package": "^8.0.0",
     "postcss": "^8.4.14",
+    "postinstall-postinstall": "^2.1.0",
     "prettier": "^2.5.1"
   },
   "engines": {

@@ -1,0 +1,13 @@
+diff --git a/node_modules/vue-dndrop/dist/vue-dndrop.js b/node_modules/vue-dndrop/dist/vue-dndrop.js
+index a48b8f0..d9150a9 100644
+--- a/node_modules/vue-dndrop/dist/vue-dndrop.js
++++ b/node_modules/vue-dndrop/dist/vue-dndrop.js
+@@ -1356,7 +1356,7 @@
+     }
+   }
+   function onMouseMove (event) {
+-    event.preventDefault();
++    if(event.cancelable) event.preventDefault();
+     var e = getPointerEvent(event);
+     if (!draggableInfo) {
+       initiateDrag(e, getElementCursor(event.target));
