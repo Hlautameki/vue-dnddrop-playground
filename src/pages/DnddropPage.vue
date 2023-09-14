@@ -13,7 +13,7 @@
       <Container>
         <div>drop area</div>
       </Container>
-      <q-btn>test</q-btn>
+      <q-btn>test2</q-btn>
     </div>
   </q-page>
 </template>
@@ -28,7 +28,7 @@ let items = ref(generateItems(1, (i) => ({id: i, data: "Draggable " + i})))
 function onDrop(dropResult) {
   console.log("drop result ", dropResult);
   // items.value = applyDrag(items.value, dropResult);
-  items.value = []
+  // items.value = []
   // items.value.push({id: 2, data: "Draggable " + 2})
   console.log(`applyDrag result: ${items.value}`)
 }
